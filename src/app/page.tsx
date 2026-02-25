@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -8,10 +7,8 @@ import {
 } from 'lucide-react';
 
 export default function Home() {
-  // Estado para controlar o Dark Mode
   const [isDark, setIsDark] = useState(true);
 
-  // Efeito executado apenas no lado do cliente para checar a preferência salva
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -23,7 +20,6 @@ export default function Home() {
     }
   }, []);
 
-  // Função para alternar o tema
   const toggleTheme = () => {
     if (isDark) {
       document.documentElement.classList.remove('dark');
@@ -54,9 +50,14 @@ export default function Home() {
 
       {/* Floating Navbar (Menu em Pílula) */}
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-3xl backdrop-blur-md bg-[#F4F4F4]/70 dark:bg-[#1B262C]/80 border border-[#BBE1FA]/30 dark:border-[#2C3E50] rounded-full px-6 py-3 shadow-lg flex justify-between items-center transition-colors duration-300">
-        <div className="flex items-center gap-2 font-bold text-xl tracking-tight">
-          <div className="w-3 h-3 bg-[#FF6B00] rounded-sm"></div>
-          Nitro<span className="text-[#FF6B00]">i</span>
+        
+        {/* LOGO ATUALIZADA AQUI */}
+        <div className="flex items-center">
+          <img 
+            src="/logo-nitroi.png" 
+            alt="Logo Nitroi" 
+            className="w-auto h-12 md:h-16 object-contain drop-shadow-md"
+          />
         </div>
 
         <div className="hidden md:flex gap-6 items-center font-mono text-xs uppercase font-semibold">
@@ -128,7 +129,7 @@ export default function Home() {
                     {'  '}name: <span className="text-green-600 dark:text-green-400">"Nitroi"</span>,{'\n'}
                     {'  '}members: [{'\n'}
                     {'    '}<span className="text-green-600 dark:text-green-400">"Vitor"</span>, <span className="text-green-600 dark:text-green-400">"David"</span>, <span className="text-green-600 dark:text-green-400">"Sabrina"</span>,{'\n'}
-                    {'    '}<span className="text-green-600 dark:text-green-400">"Kawan"</span>, <span className="text-green-600 dark:text-green-400">"Antonio"</span>{'\n'}
+                    {'    '}<span className="text-green-600 dark:text-green-400">"Kauan"</span>, <span className="text-green-600 dark:text-green-400">"Antonio"</span>{'\n'}
                     {'  '}],{'\n'}
                     {'  '}status: <span className="text-blue-600 dark:text-blue-400">"Deploying Solutions"</span>{'\n'}
                     {`}`});{'\n\n'}
@@ -225,7 +226,7 @@ export default function Home() {
               { name: 'Vitor', role: 'Lead_Developer', initial: 'V' },
               { name: 'David', role: 'Systems_Analyst', initial: 'D' },
               { name: 'Sabrina', role: 'UI/UX_Frontend', initial: 'S' },
-              { name: 'Kawan', role: 'Backend_Engineer', initial: 'K' },
+              { name: 'Kauan', role: 'Backend_Engineer', initial: 'K' },
               { name: 'Antonio', role: 'DevOps_Cloud', initial: 'A' }
             ].map((member, idx) => (
               <div key={idx} className="grid grid-cols-1 md:grid-cols-12 gap-4 py-6 items-center group hover:bg-black/5 dark:hover:bg-white/5 transition-colors px-2 md:px-0">
