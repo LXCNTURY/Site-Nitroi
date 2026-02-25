@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -127,7 +128,7 @@ export default function Home() {
                     {'  '}name: <span className="text-green-600 dark:text-green-400">"Nitroi"</span>,{'\n'}
                     {'  '}members: [{'\n'}
                     {'    '}<span className="text-green-600 dark:text-green-400">"Vitor"</span>, <span className="text-green-600 dark:text-green-400">"David"</span>, <span className="text-green-600 dark:text-green-400">"Sabrina"</span>,{'\n'}
-                    {'    '}<span className="text-green-600 dark:text-green-400">"Kauan"</span>, <span className="text-green-600 dark:text-green-400">"Antonio"</span>{'\n'}
+                    {'    '}<span className="text-green-600 dark:text-green-400">"Kawan"</span>, <span className="text-green-600 dark:text-green-400">"Antonio"</span>{'\n'}
                     {'  '}],{'\n'}
                     {'  '}status: <span className="text-blue-600 dark:text-blue-400">"Deploying Solutions"</span>{'\n'}
                     {`}`});{'\n\n'}
