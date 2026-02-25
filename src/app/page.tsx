@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Zap, Moon, Sun, TerminalSquare, ArrowUpRight, 
-  Server, Figma, Github, Linkedin, Mail, MapPin, Send 
+  Server, Figma, Github, Linkedin, Mail, MapPin, Send, 
+  Phone
 } from 'lucide-react';
 
 export default function Home() {
@@ -257,7 +258,8 @@ export default function Home() {
               <p className="text-[#BBE1FA] mb-8">Envie-nos uma requisição e a nossa equipe entrará em contato para discutirmos a arquitetura técnica do seu projeto.</p>
               
               <div className="flex flex-col gap-4 font-mono text-sm text-[#BBE1FA]">
-                <div className="flex items-center gap-3"><Mail className="w-5 h-5 text-[#FF6B00]" /> root@nitroi.dev</div>
+                <div className="flex items-center gap-3"><Mail className="w-5 h-5 text-[#FF6B00]" />nitroi.cloud5@gmail.com</div>
+                <div className="flex items-center gap-3"><Phone className="w-5 h-5 text-[#FF6B00]" /> número de contato: 9561-3482</div>
                 <div className="flex items-center gap-3"><MapPin className="w-5 h-5 text-[#FF6B00]" /> Sistema Distribuído / Remoto</div>
               </div>
             </div>
